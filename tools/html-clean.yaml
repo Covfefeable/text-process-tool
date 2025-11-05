@@ -1,0 +1,34 @@
+identity:
+  name: "html-clean"
+  author: "covfefe"
+  label:
+    en_US: "HTML Clean"
+    zh_Hans: "HTML 清理"
+    pt_BR: "HTML Clean"
+    ja_JP: "HTML Clean"
+description:
+  human:
+    en_US: "Remove ```html``` and ``` fences from text"
+    zh_Hans: "去除文本中的 ```html``` 代码块标记"
+    pt_BR: "Remove ```html``` and ``` fences from text"
+    ja_JP: "Remove ```html``` and ``` fences from text"
+  llm: "Strip HTML code fences from text"
+parameters:
+  - name: html
+    type: string
+    required: true
+    label:
+      en_US: HTML text
+      zh_Hans: HTML 文本
+      pt_BR: Texto HTML
+      ja_JP: HTML テキスト
+    human_description:
+      en_US: "HTML text to clean"
+      zh_Hans: "需要清理的 HTML 文本"
+      pt_BR: "HTML text to clean"
+      ja_JP: "HTML text to clean"
+    llm_description: "HTML text to clean"
+    form: llm
+extra:
+  python:
+    source: tools/html-clean.py

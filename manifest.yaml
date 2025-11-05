@@ -1,0 +1,37 @@
+version: 0.0.1
+type: plugin
+author: covfefe
+name: text-process-tool
+label:
+  en_US: 文本处理工具
+  ja_JP: テキスト処理ツール
+  zh_Hans: 文本处理工具
+  pt_BR: 文本处理工具
+description:
+  en_US: a tool that process text, including cleaning SQL text and think tags
+  ja_JP: テキスト処理ツールは、SQL テキストの ```sql``` を除去し、改行を除去し、大モデルの think タグを除去するツールです。
+  zh_Hans: 一款可以清除 SQL 文本中的 ```sql``` 及换行以及清除大模型中的 think 标签的工具
+  pt_BR: a tool that process text, including cleaning SQL text and think tags
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/text-process-tool.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.8.1
+created_at: 2025-11-05T15:28:19.9686+08:00
+privacy: PRIVACY.md
+verified: false

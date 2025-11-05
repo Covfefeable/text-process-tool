@@ -1,0 +1,34 @@
+identity:
+  name: "think-clean"
+  author: "covfefe"
+  label:
+    en_US: "Think Clean"
+    zh_Hans: "移除 think 标签"
+    pt_BR: "Think Clean"
+    ja_JP: "Think Clean"
+description:
+  human:
+    en_US: "Remove <think>...</think> from text"
+    zh_Hans: "移除文本中的 <think>...</think>"
+    pt_BR: "Remove <think>...</think> from text"
+    ja_JP: "Remove <think>...</think> from text"
+  llm: "Strip <think> tags and their content"
+parameters:
+  - name: text
+    type: string
+    required: true
+    label:
+      en_US: Text
+      zh_Hans: 文本
+      pt_BR: Texto
+      ja_JP: テキスト
+    human_description:
+      en_US: "Text to process"
+      zh_Hans: "需要处理的文本"
+      pt_BR: "Text to process"
+      ja_JP: "Text to process"
+    llm_description: "Text to process"
+    form: llm
+extra:
+  python:
+    source: tools/think-clean.py
