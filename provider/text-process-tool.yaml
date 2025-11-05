@@ -59,6 +59,7 @@ tools:
   - tools/sql-clean.yaml
   - tools/think-clean.yaml
   - tools/html-clean.yaml
+  - tools/text-to-file.yaml
 extra:
   python:
     source: provider/text-process-tool.py
