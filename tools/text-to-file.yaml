@@ -23,10 +23,10 @@ parameters:
       pt_BR: Formato do arquivo
       ja_JP: ファイル形式
     human_description:
-      en_US: "Supported: html, txt, md/markdown, json, csv, xml"
-      zh_Hans: "支持：html、txt、md/markdown、json、csv、xml"
-      pt_BR: "Suporta: html, txt, md/markdown, json, csv, xml"
-      ja_JP: "対応: html, txt, md/markdown, json, csv, xml"
+      en_US: "Supported: html, txt, md/markdown, json, csv, xml, sql"
+      zh_Hans: "支持：html、txt、md/markdown、json、csv、xml、sql"
+      pt_BR: "Suporta: html, txt, md/markdown, json, csv, xml, sql"
+      ja_JP: "対応: html, txt, md/markdown, json, csv, xml, sql"
     llm_description: "Target file format"
     form: llm
   - name: content

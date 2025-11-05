@@ -2,15 +2,15 @@ identity:
   author: "covfefe"
   name: "text-process-tool"
   label:
-    en_US: "text-process-tool"
-    zh_Hans: "text-process-tool"
-    pt_BR: "text-process-tool"
-    ja_JP: "text-process-tool"
+    en_US: "Text Process Tool"
+    zh_Hans: "文本百宝箱"
+    pt_BR: "Text Process Tool"
+    ja_JP: "テキスト百宝箱"
   description:
-    en_US: "a tool that process text"
-    zh_Hans: "a tool that process text"
-    pt_BR: "a tool that process text"
-    ja_JP: "a tool that process text"
+    en_US: "Provide tools to clean Markdown code fences by marker, strip <think> tags, and convert text to files."
+    zh_Hans: "提供按标记清理 Markdown 代码块围栏、移除 <think> 标签，以及文本转文件功能。"
+    pt_BR: "Fornece ferramentas para limpar cercas de código Markdown por marcador, remover tags <think> e converter texto em arquivos."
+    ja_JP: "マーカーに応じて Markdown のコードフェンスを削除し、<think> タグを除去し、テキストをファイルに変換します。"
   icon: "icon.svg"
 
 #########################################################################################
@@ -56,9 +56,8 @@ identity:
 #         en_US: "Access Token"
 
 tools:
-  - tools/sql-clean.yaml
   - tools/think-clean.yaml
-  - tools/html-clean.yaml
+  - tools/markdown-fence-clean.yaml
   - tools/text-to-file.yaml
 extra:
   python:

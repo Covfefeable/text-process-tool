@@ -13,6 +13,7 @@ MIME_MAP: dict[str, str] = {
     "json": "application/json",
     "csv": "text/csv",
     "xml": "application/xml",
+    "sql": "text/plain",
 }
 
 EXT_MAP: dict[str, str] = {
@@ -23,6 +24,7 @@ EXT_MAP: dict[str, str] = {
     "json": "json",
     "csv": "csv",
     "xml": "xml",
+    "sql": "sql",
 }
 
 
@@ -41,15 +43,6 @@ def _build_blob(fmt: str, content: str) -> tuple[bytes, str]:
     mime = MIME_MAP.get(fmt)
     if not mime:
         raise ValueError(f"不支持的文件格式: {fmt}")
-    if fmt == "html":
-        html_text = (
-            "<!DOCTYPE html>\n"
-            "<html><head><meta charset=\"utf-8\"></head><body>\n"
-            f"{content}\n"
-            "</body></html>\n"
-        )
-        return html_text.encode("utf-8"), mime
-    # 其他文本格式直接按原文写入
     return content.encode("utf-8"), mime
 
 

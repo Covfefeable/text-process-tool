@@ -1,0 +1,49 @@
+identity:
+  name: "markdown-fence-clean"
+  author: "covfefe"
+  label:
+    en_US: "Markdown Fence Clean"
+    zh_Hans: "Markdown 代码块清理"
+    pt_BR: "Markdown Fence Clean"
+    ja_JP: "Markdown Fence Clean"
+description:
+  human:
+    en_US: "Remove ```<marker> and closing ``` around markdown code blocks"
+    zh_Hans: "按标记移除 Markdown 代码块的围栏行（```<marker> 与 ```）"
+    pt_BR: "Remover cercas de código Markdown conforme o marcador"
+    ja_JP: "マーカーに応じて Markdown のコードフェンスを削除"
+  llm: "Strip markdown code fences by given marker"
+parameters:
+  - name: marker
+    type: string
+    required: true
+    label:
+      en_US: Marker
+      zh_Hans: 标记
+      pt_BR: Marcador
+      ja_JP: マーカー
+    human_description:
+      en_US: "Language marker inside opening fence, e.g., sql, html"
+      zh_Hans: "开围栏中的语言标记，如 sql、html"
+      pt_BR: "Marcador de linguagem na cerca de abertura, ex.: sql, html"
+      ja_JP: "開くフェンスの言語マーカー（例: sql, html）"
+    llm_description: "Language marker in opening fence"
+    form: llm
+  - name: text
+    type: string
+    required: true
+    label:
+      en_US: Text
+      zh_Hans: 文本
+      pt_BR: Texto
+      ja_JP: テキスト
+    human_description:
+      en_US: "Markdown text to process"
+      zh_Hans: "需要处理的 Markdown 文本"
+      pt_BR: "Texto Markdown a processar"
+      ja_JP: "処理対象の Markdown テキスト"
+    llm_description: "Markdown text to process"
+    form: llm
+extra:
+  python:
+    source: tools/markdown-fence-clean.py
