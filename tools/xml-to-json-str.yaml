@@ -1,0 +1,34 @@
+identity:
+  name: "xml-to-json-str"
+  author: "covfefe"
+  label:
+    en_US: "XML to JSON String"
+    zh_Hans: "XML 转 JSON 字符串"
+    pt_BR: "XML para String JSON"
+    ja_JP: "XML を JSON 文字列へ"
+description:
+  human:
+    en_US: "Convert XML text into a JSON string"
+    zh_Hans: "将 XML 文本转换为 JSON 字符串"
+    pt_BR: "Converter texto XML em string JSON"
+    ja_JP: "XML テキストを JSON 文字列へ変換"
+  llm: "Convert XML text to JSON string"
+parameters:
+  - name: xml
+    type: string
+    required: true
+    label:
+      en_US: XML text
+      zh_Hans: XML 文本
+      pt_BR: Texto XML
+      ja_JP: XML テキスト
+    human_description:
+      en_US: "XML text to convert"
+      zh_Hans: "需要转换的 XML 文本"
+      pt_BR: "Texto XML a converter"
+      ja_JP: "変換対象の XML テキスト"
+    llm_description: "XML text to convert"
+    form: llm
+extra:
+  python:
+    source: tools/xml-to-json-str.py

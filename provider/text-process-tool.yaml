@@ -7,10 +7,10 @@ identity:
     pt_BR: "Text Process Tool"
     ja_JP: "テキスト百宝箱"
   description:
-    en_US: "Provide tools to clean Markdown code fences by marker, strip <think> tags, and convert text to files."
-    zh_Hans: "提供按标记清理 Markdown 代码块围栏、移除 <think> 标签，以及文本转文件功能。"
-    pt_BR: "Fornece ferramentas para limpar cercas de código Markdown por marcador, remover tags <think> e converter texto em arquivos."
-    ja_JP: "マーカーに応じて Markdown のコードフェンスを削除し、<think> タグを除去し、テキストをファイルに変換します。"
+    en_US: "Provide tools to clean Markdown code fences by marker, strip <think> tags, convert text to files, and convert between JSON string and XML."
+    zh_Hans: "提供按标记清理 Markdown 代码块围栏、移除 <think> 标签、文本转文件，以及 JSON 字符串与 XML 互转功能。"
+    pt_BR: "Fornece ferramentas para limpar cercas de código Markdown por marcador, remover tags <think>, converter texto em arquivos e converter entre string JSON e XML."
+    ja_JP: "マーカーに応じて Markdown のコードフェンスを削除し、<think> タグを除去し、テキストをファイルに変換し、JSON 文字列と XML の相互変換を提供します。"
   icon: "icon.svg"
 
 #########################################################################################
@@ -59,6 +59,8 @@ tools:
   - tools/think-clean.yaml
   - tools/markdown-fence-clean.yaml
   - tools/text-to-file.yaml
+  - tools/json-str-to-xml.yaml
+  - tools/xml-to-json-str.yaml
 extra:
   python:
     source: provider/text-process-tool.py

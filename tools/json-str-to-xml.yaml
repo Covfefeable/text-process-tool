@@ -1,0 +1,49 @@
+identity:
+  name: "json-str-to-xml"
+  author: "covfefe"
+  label:
+    en_US: "JSON String to XML"
+    zh_Hans: "JSON 字符串转 XML"
+    pt_BR: "JSON String to XML"
+    ja_JP: "JSON 文字列を XML へ"
+description:
+  human:
+    en_US: "Convert a JSON string into XML text"
+    zh_Hans: "将 JSON 字符串转换为 XML 文本"
+    pt_BR: "Converter uma string JSON em texto XML"
+    ja_JP: "JSON 文字列を XML テキストに変換"
+  llm: "Convert JSON string to XML"
+parameters:
+  - name: json
+    type: string
+    required: true
+    label:
+      en_US: JSON string
+      zh_Hans: JSON 字符串
+      pt_BR: String JSON
+      ja_JP: JSON 文字列
+    human_description:
+      en_US: "JSON text to convert"
+      zh_Hans: "需要转换的 JSON 文本"
+      pt_BR: "Texto JSON a converter"
+      ja_JP: "変換対象の JSON テキスト"
+    llm_description: "JSON text to convert"
+    form: llm
+  - name: custom_root
+    type: string
+    required: false
+    label:
+      en_US: Root tag
+      zh_Hans: 根标签
+      pt_BR: Tag raiz
+      ja_JP: ルートタグ
+    human_description:
+      en_US: "Optional; default is 'root'"
+      zh_Hans: "可选；默认为 'root'"
+      pt_BR: "Opcional; padrão é 'root'"
+      ja_JP: "任意; 既定値は 'root'"
+    llm_description: "Custom root element name for XML"
+    form: llm
+extra:
+  python:
+    source: tools/json-str-to-xml.py
